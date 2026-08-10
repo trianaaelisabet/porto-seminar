@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Akademik PPG Prajabatan | Calon Guru Profesional</title>
+  <meta name="description"
+    content="Portofolio Digital Akademik & Perjalanan Pengembangan Profesi Calon Guru Profesional PPG Prajabatan. Refleksi kritis, artefak pembelajaran, dan karya inovasi pendidikan.">
+  <meta name="keywords"
+    content="PPG Prajabatan, Portofolio Akademik, Guru Profesional, Jurnal Refleksi, Artefak Pembelajaran, PPL, Kurikulum Merdeka">
+
+  <!-- Google Fonts: Playfair Display & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+
+  <!-- 00. STICKY NAVIGATION -->
+  <nav class="navbar" id="navbar" aria-label="Main Navigation">
+    <div class="container navbar-container">
+      <a href="#hero" class="navbar-brand" aria-label="Home">
+        <div class="brand-icon">P</div>
+        <div class="brand-text">
+          <span class="brand-title">PPG PRAJABATAN</span>
+          <span class="brand-sub">PORTOFOLIO AKADEMIK</span>
+        </div>
+      </a>
+
+      <!-- Desktop Links -->
+      <ul class="nav-links">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#profil" class="nav-link">Profil</a></li>
+        <li><a href="#identitas" class="nav-link">Identitas</a></li>
+        <li><a href="#semester1" class="nav-link">Semester 1</a></li>
+        <li><a href="#semester2" class="nav-link">Semester 2</a></li>
+        <li><a href="#refleksi" class="nav-link">Refleksi</a></li>
+        <li><a href="#karya" class="nav-link">Karya</a></li>
+        <li><a href="#dokumen" class="nav-link">Dokumen</a></li>
+        <li><a href="#kontak" class="nav-link">Kontak</a></li>
+      </ul>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle mobile menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Overlay -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <a href="#hero" class="nav-link">Home</a>
+      <a href="#profil" class="nav-link">Profil Mahasiswa</a>
+      <a href="#identitas" class="nav-link">Identifikasi Diri</a>
+      <a href="#semester1" class="nav-link">Semester 1 (Foundation)</a>
+      <a href="#semester2" class="nav-link">Semester 2 (Application)</a>
+      <a href="#refleksi" class="nav-link">Refleksi Keseluruhan</a>
+      <a href="#karya" class="nav-link">Karya Inovasi</a>
+      <a href="#dokumen" class="nav-link">Dokumen Repositori</a>
+      <a href="#kontak" class="nav-link">Kontak Profesional</a>
+    </div>
+  </nav>
+
+  <!-- 01. HERO SECTION -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-header-tag">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon
+              points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+            </polygon>
+          </svg>
+          PORTOFOLIO AKADEMIK PPG PRAJABATAN
+        </div>
+
+        <h1 class="hero-name">Triana Elisabet Sinaga</h1>
+
+        <div class="hero-subtitle">
+          <span>Calon Guru Profesional</span>
+          <span style="color: var(--color-gold);">•</span>
+          <span style="font-weight: 400; color: var(--color-text-secondary); font-size: 1.05rem;">Reflective Educator
+            &amp; Adaptive Learner</span>
+        </div>
+
+        <div class="hero-statement">
+          <p>"Menjadi pendidik yang tidak hanya mengajar, tetapi membantu peserta didik menemukan potensi, makna, dan
+            pengalaman belajar yang relevan."</p>
+        </div>
+
+        <div class="hero-cta-group">
+          <a href="#profil" class="btn btn-primary">
+            Lihat Perjalanan Saya
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <button class="btn btn-secondary" onclick="openSummaryModal()">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            Download Portfolio
+          </button>
+        </div>
+      </div>
+
+      <!-- Student Portrait Card -->
+      <div class="hero-portrait-card">
+        <div class="portrait-frame">
+          <img src="asset/IMG_4645.JPG" alt="Foto Profil Mahasiswa PPG Prajabatan" class="portrait-img">
+          <div class="portrait-badge-overlay">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            PPG Prajabatan Verified
+          </div>
+        </div>
+
+        <div class="hero-stats-row">
+          <div class="stat-item">
+            <span class="stat-num">2</span>
+            <span class="stat-label">Semester</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">11</span>
+            <span class="stat-label">Mata Kuliah</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">100%</span>
+            <span class="stat-label">PPL Tuntas</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02. PROFIL MAHASISWA -->
+  <section class="section section-alt" id="profil">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <span class="section-tag">PROFIL MAHASISWA</span>
+        <h2 class="section-title">Identitas Akademik &amp; Keahlian</h2>
+        <p class="section-subtitle">Data resmi keikutsertaan program PPG Prajabatan dan profil profesional calon
+          pendidik.</p>
+      </div>
+
+      <div class="profile-grid">
+        <!-- Card 1: Data Akademik -->
+        <div class="profile-card reveal-on-scroll">
+          <div class="profile-card-header">
+            <div class="profile-card-icon">👤</div>
+            <div>
+              <h3 style="font-size: 1.25rem;">Biodata Resmi</h3>
+              <p class="caption-text">LPTK Penyelenggara PPG Prajabatan</p>
+            </div>
+          </div>
+
+          <div class="profile-info-list">
+            <div class="info-row">
+              <span class="info-label">Nama Lengkap</span>
+              <span class="info-value"><span class="info-placeholder">[NAMA LENGKAP]</span></span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Nomor Induk Mahasiswa (NIM)</span>
+              <span class="info-value"><span class="info-placeholder">[NIM]</span></span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Program Studi</span>
+              <span class="info-value"><span class="info-placeholder">[PROGRAM STUDI]</span></span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Alamat Domisili</span>
+              <span class="info-value"><span class="info-placeholder">[ALAMAT]</span></span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Lokasi Praktik (PPL)</span>
+              <span class="info-value"><span class="info-placeholder">[LOKASI PPL]</span></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Professional Identity Statement -->
+        <div class="profile-card reveal-on-scroll">
+          <div class="profile-card-header">
+            <div class="profile-card-icon" style="background-color: var(--color-gold-light); color: var(--color-dark);">
+              🎯</div>
+            <div>
+              <h3 style="font-size: 1.25rem;">Jatidiri Pendidik</h3>
+              <p class="caption-text">Reflective &amp; Learner-Centered Teacher</p>
+            </div>
+          </div>
+
+          <p class="lead-text" style="font-size: 1rem; margin-bottom: 1rem;">
+            Sebagai calon guru profesional lulusan PPG Prajabatan, saya berkomitmen menjalankan peran pendidik yang
+            tidak hanya berfokus pada penyampaian konten materi, melainkan memfasilitasi perkembangan holistik peserta
+            didik.
+          </p>
+
+          <p style="font-size: 0.95rem; color: var(--color-text-secondary); margin-bottom: 1.25rem;">
+            Melalui integrasi pendekatan Understanding by Design (UbD), pembelajaran berdiferensiasi, serta Pembelajaran
+            Sosial Emosional (PSE), saya berupaya menciptakan iklim belajar yang aman, nyaman, dan berpihak pada murid.
+          </p>
+
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            <span class="badge badge-primary">Pedagogi Abad 21</span>
+            <span class="badge badge-gold">Kurikulum Merdeka</span>
+            <span class="badge badge-green">PSE &amp; Well-Being</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03. IDENTIFIKASI DIRI -->
+  <section class="section" id="identitas">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <span class="section-tag">IDENTIFIKASI DIRI</span>
+        <h2 class="section-title">Visi &amp; Strategi Pendidikan</h2>
+        <p class="section-subtitle">Arah filosofis dan peta jalan komitmen profesional menuju transformasi pendidikan
+          Indonesia.</p>
+      </div>
+
+      <div class="identification-grid">
+        <!-- CARD 01 -->
+        <div class="id-card reveal-on-scroll">
+          <span class="id-card-num">CARD 01</span>
+          <h3 class="id-card-title">VISI UNTUK PENDIDIKAN INDONESIA</h3>
+          <p style="font-size: 0.95rem; color: var(--color-text-secondary); line-height: 1.7;">
+            Terwujudnya ekosistem pendidikan Indonesia yang memerdekakan, inklusif, dan berlandaskan ajaran Ki Hajar
+            Dewantara, di mana setiap peserta didik dapat berkembang sesuai kodrat alam dan zamannya serta memiliki
+            karakter Profil Pelajar Pancasila.
+          </p>
+          <div style="margin-top: auto; padding-top: 1rem;">
+            <span class="badge badge-gold">Ing Ngarso Sung Tulodo</span>
+          </div>
+        </div>
+
+        <!-- CARD 02 -->
+        <div class="id-card reveal-on-scroll">
+          <span class="id-card-num">CARD 02</span>
+          <h3 class="id-card-title">VISI PRIBADI SEBAGAI CALON GURU</h3>
+          <p style="font-size: 0.95rem; color: var(--color-text-secondary); line-height: 1.7;">
+            Menjadi pendidik reflektif, pembelajar sepanjang hayat (lifelong learner), dan inovator pembelajaran yang
+            mumpuni dalam merancang pengalaman belajar bermakna, berpihak pada murid, dan responsif terhadap kebutuhan
+            era digital.
+          </p>
+          <div style="margin-top: auto; padding-top: 1rem;">
+            <span class="badge badge-primary">Reflective Educator</span>
+          </div>
+        </div>
+
+        <!-- CARD 03 -->
+        <div class="id-card reveal-on-scroll">
+          <span class="id-card-num">CARD 03</span>
+          <h3 class="id-card-title">STRATEGI MENCAPAI VISI</h3>
+          <p style="font-size: 0.85rem; color: var(--color-text-secondary); margin-bottom: 0.5rem;">5 Langkah Strategis
+            Peta Jalan:</p>
+
+          <div class="roadmap-timeline">
+            <div class="roadmap-step">
+              <div class="step-num">01</div>
+              <div class="step-body">
+                <h4>Develop Competence</h4>
+                <p>Menguasai pedagogi mutakhir &amp; konten.</p>
+              </div>
+            </div>
+
+            <div class="roadmap-step">
+              <div class="step-num">02</div>
+              <div class="step-body">
+                <h4>Understand Learners</h4>
+                <p>Asesmen diagnostik komprehensif.</p>
+              </div>
+            </div>
+
+            <div class="roadmap-step">
+              <div class="step-num">03</div>
+              <div class="step-body">
+                <h4>Design Meaningful Learning</h4>
+                <p>Modul UbD &amp; Pembelajaran Berdiferensiasi.</p>
+              </div>
+            </div>
+
+            <div class="roadmap-step">
+              <div class="step-num">04</div>
+              <div class="step-body">
+                <h4>Practice and Reflect</h4>
+                <p>Evaluasi berkelanjutan di PPL &amp; Kelas.</p>
+              </div>
+            </div>
+
+            <div class="roadmap-step">
+              <div class="step-num">05</div>
+              <div class="step-body">
+                <h4>Continuous Professional Dev.</h4>
+                <p>Riset tindakan kelas &amp; komunitas guru.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04. SEMESTER 1 TIMELINE -->
+  <section class="section section-alt" id="semester1">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <span class="section-tag">SEMESTER 01</span>
+        <h2 class="section-title">Foundation of Educational Practice</h2>
+        <p class="section-subtitle">Analisis reflektif mata kuliah dasar pemikiran filosofis, pemahaman murid, dan
+          fondasi pedagogi.</p>
+      </div>
+
+      <div class="timeline-wrapper" id="semester1Container">
+        <!-- Rendered via JS reflections-data.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 05. SEMESTER 2 TIMELINE -->
+  <section class="section" id="semester2">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <span class="section-tag">SEMESTER 02</span>
+        <h2 class="section-title">Application, Leadership &amp; Professional Dev.</h2>
+        <p class="section-subtitle">Penerapan praktik mandiri, projek kepemimpinan, dan pengembangan profesi
+          berkelanjutan.</p>
+      </div>
+
+      <div class="timeline-wrapper" id="semester2Container">
+        <!-- Rendered via JS reflections-data.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 06. OVERALL REFLECTION & ACTION PLAN -->
+  <section class="section section-dark" id="refleksi">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <span class="section-tag section-tag-gold">REFLEKSI KESELURUHAN</span>
+        <h2 class="section-title">From Learner to Professional Educator</h2>
+        <p class="section-subtitle">Sintesis perjalanan transformasi mental, kompetensi, dan rencana aksi masa depan
+          pendidik.</p>
+      </div>
+
+      <!-- 8-Step Interactive Journey Stepper -->
+      <div class="journey-stepper-container reveal-on-scroll">
+        <h3 style="font-size: 1.15rem; color: var(--color-dark); text-align: center; margin-bottom: 1.5rem;">
+          Peta Perjalanan Transformasi Belajar PPG Prajabatan
+        </h3>
+        <div class="journey-stepper" id="journeyStepper">
+          <!-- Rendered via JS -->
+        </div>
+      </div>
+
+      <!-- Long-Form Reflection Essay Area -->
+      <div
+        style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: var(--radius-lg); padding: 2.5rem; margin-bottom: 3.5rem;"
+        class="reveal-on-scroll">
+        <h3 style="color: var(--color-gold); font-size: 1.6rem; margin-bottom: 1.25rem;">
+          Refleksi Pengalaman Belajar Selama PPG Prajabatan
+        </h3>
+        <p style="color: #E2E8F0; line-height: 1.8; font-size: 1.025rem; margin-bottom: 1.25rem;">
+          Mengikuti program PPG Prajabatan merupakan proses dekonstruksi dan rekonstruksi pemikiran mendasar saya
+          mengenai profesi pendidik. Di awal program, saya menganggap tugas utama guru adalah menyampaikan materi
+          kurikulum secara tuntas. Namun, melalui interaksi mendalam dengan filosofi Ki Hajar Dewantara, asesmen
+          diagnostik murid, dan praktik langsung PPL, saya menyadari bahwa mengajar adalah seni menuntut dan
+          memfasilitasi potensi unik setiap anak.
+        </p>
+        <p style="color: #CBD5E1; line-height: 1.8; font-size: 1rem; margin-bottom: 1.25rem;">
+          Tantangan terbesar yang saya hadapi dan selesaikan adalah mengintegrasikan pembelajaran berdiferensiasi dan
+          Pembelajaran Sosial Emosional (PSE) secara harmonis. Mengelola kelas dengan 30+ murid beragam latar belakang
+          tidak lagi saya respon dengan penyeragaman instruksi, melainkan melalui peta kesiapan belajar (readiness) dan
+          ruang aman emosional (Mindfulness).
+        </p>
+
+        <blockquote
+          style="background: rgba(200, 169, 107, 0.1); border-left-color: var(--color-gold); color: #FFFFFF; margin: 1.5rem 0;">
+          "Guru profesional tidak diukur dari seberapa banyak materi yang ia jelaskan di depan kelas, melainkan dari
+          seberapa bermakna pengalaman belajar yang dialami oleh peserta didiknya."
+          <span class="quote-author" style="color: var(--color-gold);">— Catatan Refleksi Diri [NAMA LENGKAP]</span>
+        </blockquote>
+      </div>
+
+      <!-- Rencana Tindak Lanjut Roadmap -->
+      <div class="reveal-on-scroll">
+        <h3 style="color: #FFFFFF; font-size: 1.5rem; text-align: center; margin-bottom: 1.5rem;">
+          Rencana Tindak Lanjut (Follow-Up Action Plan)
+        </h3>
+
+        <div class="action-plan-grid">
+          <!-- Short-term -->
+          <div class="action-card short-term">
+            <div class="action-card-header">
+              <span class="badge badge-primary">1 - 6 Bulan</span>
+              <h4 style="margin: 0; font-size: 1.05rem;">Jangka Pendek</h4>
+            </div>
+            <p style="font-size: 0.9rem; color: var(--color-text-secondary); line-height: 1.6;">
+              Penyusunan modul ajar berdiferensiasi berbasis UbD secara konsisten di sekolah penugasan serta pengaktifan
+              komunitas belajar guru (KKG/MGMP).
+            </p>
+          </div>
+
+          <!-- Medium-term -->
+          <div class="action-card medium-term">
+            <div class="action-card-header">
+              <span class="badge badge-gold">1 - 2 Tahun</span>
+              <h4 style="margin: 0; font-size: 1.05rem;">Jangka Menengah</h4>
+            </div>
+            <p style="font-size: 0.9rem; color: var(--color-text-secondary); line-height: 1.6;">
+              Melaksanakan Penelitian Tindakan Kelas (PTK) berkelanjutan, sertifikasi kompetensi teknologi edukasi, dan
+              publikasi artikel ilmiah inovasi pembelajaran.
+            </p>
+          </div>
+
+          <!-- Long-term -->
+          <div class="action-card long-term">
+            <div class="action-card-header">
+              <span class="badge badge-green">3 - 5 Tahun</span>
+              <h4 style="margin: 0; font-size: 1.05rem;">Jangka Panjang</h4>
+            </div>
+            <p style="font-size: 0.9rem; color: var(--color-text-secondary); line-height: 1.6;">
+              Mengambil peran sebagai Guru Penggerak/Mentor Pendidikan, pengembang kurikulum daerah, serta penggerak
+              inovasi media pembelajaran berbasis digital.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 07. KARYA INOVASI PENDIDIKAN -->
+  <section class="section section-alt" id="karya">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <span class="section-tag">INOVASI PENDIDIKAN</span>
+        <h2 class="section-title">Karya &amp; Proyek Pembelajaran</h2>
+        <p class="section-subtitle">Galeri produk inovasi media, perangkat ajar, dan proyek kepemimpinan sosial yang
+          dikembangkan selama PPG.</p>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Rendered via JS projects-data.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 08. SERTIFIKAT & DOKUMEN REPOSITORI -->
+  <section class="section" id="dokumen">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <span class="section-tag">REPOSITORI AKADEMIK</span>
+        <h2 class="section-title">Dokumen Pendukung &amp; Bukti Akademik</h2>
+        <p class="section-subtitle">Pusat arsip berkas, sertifikat, laporan PPL, dan perangkat asesmen resmi
+          terverifikasi.</p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="doc-filter-bar reveal-on-scroll">
+        <button class="filter-btn active" data-filter="ALL">ALL (Semua Berkas)</button>
+        <button class="filter-btn" data-filter="REFLECTION">REFLECTION</button>
+        <button class="filter-btn" data-filter="PPL">PPL</button>
+        <button class="filter-btn" data-filter="TEACHING MATERIAL">TEACHING MATERIAL</button>
+        <button class="filter-btn" data-filter="ASSESSMENT">ASSESSMENT</button>
+        <button class="filter-btn" data-filter="PROJECT">PROJECT</button>
+        <button class="filter-btn" data-filter="CERTIFICATE">CERTIFICATE</button>
+      </div>
+
+      <!-- Document Grid -->
+      <div class="doc-grid" id="docGrid">
+        <!-- Rendered via JS document-data.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 09. KONTAK PROFESIONAL -->
+  <section class="section section-alt" id="kontak">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <span class="section-tag">KONTAK PROFESIONAL</span>
+        <h2 class="section-title">Terhubung &amp; Kolaborasi</h2>
+        <p class="section-subtitle">Saluran komunikasi terbuka untuk penilai LPTK, dosen pembimbing, kepala sekolah, dan
+          rekan sejawat.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Info Card -->
+        <div class="contact-info-card reveal-on-scroll">
+          <div>
+            <h3 style="color: #FFFFFF; font-size: 1.5rem; margin-bottom: 0.5rem;">Informasi Kontak</h3>
+            <p style="color: #CBD5E1; font-size: 0.95rem;">Siap berdiskusi mengenai inovasi pembelajaran dan peluang
+              pengabdian pendidikan.</p>
+
+            <div class="contact-info-list">
+              <div class="contact-item">
+                <div class="contact-icon">✉️</div>
+                <div>
+                  <div style="font-size: 0.75rem; color: var(--color-gold); font-weight: 700;">EMAIL RESMI</div>
+                  <div style="font-size: 1rem; font-weight: 600;">[EMAIL]</div>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">💼</div>
+                <div>
+                  <div style="font-size: 0.75rem; color: var(--color-gold); font-weight: 700;">LINKEDIN PROFESIONAL
+                  </div>
+                  <div style="font-size: 1rem; font-weight: 600;">[LINKEDIN]</div>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">📍</div>
+                <div>
+                  <div style="font-size: 0.75rem; color: var(--color-gold); font-weight: 700;">DOMISILI</div>
+                  <div style="font-size: 1rem; font-weight: 600;">[ALAMAT]</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            style="padding-top: 1.5rem; border-top: 1px solid rgba(255, 255, 255, 0.1); font-size: 0.85rem; color: #94A3B8;">
+            Status: Lulusan PPG Prajabatan 2026 • Siap Penugasan Guru Profesional
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-card reveal-on-scroll">
+          <h3 style="font-size: 1.25rem; color: var(--color-dark); margin-bottom: 1.25rem;">Kirim Pesan atau Undangan
+            Kolaborasi</h3>
+          <form id="contactForm">
+            <div class="form-group">
+              <label class="form-label" for="senderName">Nama Lengkap Pengirim</label>
+              <input type="text" id="senderName" class="form-control" placeholder="Masukkan nama Anda" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="senderEmail">Email Kontak</label>
+              <input type="email" id="senderEmail" class="form-control" placeholder="nama@instansi.ac.id / .sch.id"
+                required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="messageSubject">Subjek Pesan</label>
+              <input type="text" id="messageSubject" class="form-control"
+                placeholder="contoh: Undangan Diskusi / Asesmen Portofolio" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="messageText">Pesan / Catatan</label>
+              <textarea id="messageText" class="form-control" placeholder="Tuliskan pesan Anda di sini..."
+                required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              Kirim Pesan Profesional
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. FINAL CTA -->
+  <section class="section section-dark"
+    style="text-align: center; padding: 6rem 1.5rem; background: linear-gradient(180deg, var(--color-dark) 0%, #061528 100%); border-top: 2px solid var(--color-gold);"
+    id="cta">
+    <div class="container" style="max-width: 800px;">
+      <span class="section-tag section-tag-gold">PENUTUP &amp; KOMITMEN</span>
+
+      <blockquote
+        style="background: transparent; border: none; font-size: 1.35rem; color: #FFFFFF; line-height: 1.7; margin: 2rem 0;">
+        "Perjalanan menjadi guru bukan tentang menjadi sempurna, melainkan tentang terus belajar, berefleksi, dan
+        bertumbuh untuk memberikan pengalaman belajar yang bermakna bagi setiap peserta didik."
+      </blockquote>
+
+      <div style="margin-top: 2.5rem;">
+        <a href="#hero" class="btn btn-gold btn-lg">
+          Explore My Teaching Journey
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
+            <div class="brand-icon" style="width: 32px; height: 32px; font-size: 1rem;">P</div>
+            <span
+              style="font-family: var(--font-heading); font-size: 1.2rem; font-weight: 700; color: #FFFFFF;">PORTOFOLIO
+              AKADEMIK PPG</span>
+          </div>
+          <p style="color: #94A3B8; font-size: 0.9rem; max-width: 450px; line-height: 1.6;">
+            Portofolio digital resmi calon guru profesional program PPG Prajabatan. Memvisualisasikan perkembangan
+            reflektif, karya inovasi, dan bukti capaian pembelajaran secara transparan.
+          </p>
+        </div>
+
+        <div>
+          <h4
+            style="color: var(--color-gold); font-size: 0.9rem; letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 1rem;">
+            Navigasi Cepat</h4>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.85rem;">
+            <li><a href="#profil" style="color: #CBD5E1; text-decoration: none;">Profil Mahasiswa</a></li>
+            <li><a href="#semester1" style="color: #CBD5E1; text-decoration: none;">Refleksi Semester 1</a></li>
+            <li><a href="#semester2" style="color: #CBD5E1; text-decoration: none;">Refleksi Semester 2</a></li>
+            <li><a href="#karya" style="color: #CBD5E1; text-decoration: none;">Karya Inovasi</a></li>
+            <li><a href="#dokumen" style="color: #CBD5E1; text-decoration: none;">Dokumen Repositori</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4
+            style="color: var(--color-gold); font-size: 0.9rem; letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 1rem;">
+            Legal &amp; Lisensi</h4>
+          <p style="font-size: 0.85rem; color: #94A3B8; line-height: 1.5;">
+            Hak cipta seluruh dokumen &amp; karya inovasi dilindungi. Diperuntukkan khusus bagi asesmen akademik PPG
+            Prajabatan.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          [NAMA LENGKAP] • PPG Prajabatan • Program Studi [PROGRAM STUDI]
+        </div>
+        <div>
+          Academic Portfolio © 2026. All rights reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button class="back-to-top" id="backToTopBtn" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- MODAL DIALOG CONTAINER -->
+  <div class="modal-overlay" id="modalOverlay" aria-hidden="true" role="dialog">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modalTitle">Modal Title</h3>
+        <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body" id="modalBody">
+        <!-- Dynamic Content -->
+      </div>
+      <div class="modal-footer" id="modalFooter">
+        <!-- Dynamic Actions -->
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Modules -->
+  <script src="js/reflections-data.js"></script>
+  <script src="js/projects-data.js"></script>
+  <script src="js/document-data.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>

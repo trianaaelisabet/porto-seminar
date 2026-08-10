@@ -1,0 +1,97 @@
+/* ==========================================================================
+   TYPOGRAPHY SYSTEM
+   Headings: Playfair Display / DM Serif Display
+   Body: Inter / Manrope
+   ========================================================================== */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--color-dark);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+}
+
+h3 {
+  font-size: clamp(1.3rem, 2.2vw, 1.75rem);
+}
+
+h4 {
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+p {
+  color: var(--color-text-primary);
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+.lead-text {
+  font-size: 1.15rem;
+  color: var(--color-text-secondary);
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.caption-text {
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+}
+
+.metadata-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-gold);
+}
+
+/* Quote Cards & Blockquotes */
+blockquote {
+  position: relative;
+  padding: 1.75rem 2rem;
+  background-color: var(--color-primary-light);
+  border-left: 4px solid var(--color-gold);
+  border-radius: var(--radius-md);
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--color-dark);
+  line-height: 1.6;
+  margin: 1.5rem 0;
+}
+
+blockquote::before {
+  content: "“";
+  position: absolute;
+  top: -0.25rem;
+  left: 0.75rem;
+  font-size: 3.5rem;
+  color: var(--color-gold);
+  opacity: 0.3;
+  font-family: serif;
+}
+
+.quote-author {
+  display: block;
+  margin-top: 0.75rem;
+  font-family: var(--font-body);
+  font-style: normal;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
